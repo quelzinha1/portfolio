@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre mim</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+    <header class="cabecalho">
+     <nav class="cabecalho__menu">
+      <a class="cabecalho__menu__link" href="index.html">Home</a>
+      <a class="cabecalho__menu__link" href="about.html">Sobre mim</a>  
+     </nav>
+    </header>
+    
+    <main class="apresentacao">
+     <section class="apresentacao__conteudo">
+      <h1 class="apresentacao__conteudo__titulo">Sobre mim</h1>      
+      <p class="apresentacao__conteudo__texto" >Estudando Análise e Desenvolvimento de Sistemas. Criadora de conteúdo na Twitch. Entusiasta do desenvolvimento Front-end.</p> 
+    </section>
+      <img class="apresentacao__imagem" src="Aula/assets/quelzinha.png" alt= "Quelzinha Programando">
+    </main>
+    
+    <footer class="rodape">
+        <script>
+            
+            const images = [
+                '1.','2.',""   
+                
+            ];
+        
+            let index = 0;
+        
+            function changeBackground() {
+                document.body.style.backgroundImage = `url('${images[index]}')`;
+                index = (index + 1) % images.length;
+                setTimeout(changeBackground, 10000); // Altera a cada 10 segundos (10000 milissegundos)
+            }
+        
+            
+            changeBackground();
+        </script> 
+                <div class="apresentacao__links">
+                    <h2 class="apresentacao__links__subtitulo">Acesse minhas redes:</h2>
+                       <a class="apresentacao__links__navegacao" href="https://github.com/quelzinha1">
+                          <img src="./Aula/assets/githubcinza1.png">
+                          </a>               
+                           <a class="apresentacao__links__navegacao" href="https://www.instagram.com/quelzinha_sz/">
+                             <img src="./Aula/assets/instagramrosa.png">
+                          </a>
+                             <a class="apresentacao__links__navegacao" href="https://www.twitch.tv/quelzinha_sz">
+                              <img src="./Aula/assets/twitchroxo1.png">                   
+                       </a>
+                          </div>
+</body>
+</html>
